@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JS</title>
+  <link rel="stylesheet" href="http://oxford.code61.org/bootstrap/css/bootstrap.css">
+  <script type="text/javascript">
+
+  // why is this dangerous?
+  var people = ["Alice", "Bob", "Eve"];
+
+  // JS Object (still dangerous)
+  // var people =
+  //   [ { name: "Alice", role: "sender"},
+  //     { name: "Bob", role: "receiver"},
+  //     { name: "Eve", role: "hacker!"},
+  //   ];
+
+  // print out array
+  console.log(people);
+
+  // old school for loop for iterating array
+  // for (var i =  0; i < people.length; i++) {
+  //   printPersonName(people[i]);
+  // };
+
+  // more efficient albeit slightly less readable for loop - why?
+  // for (var i = people.length - 1; i >= 0; i--) {
+  //   printPersonName(people[i]);
+  // };
+
+  // let's get fancy
+  // people.forEach(printPersonName);
+
+  // function declaration
+  function printPersonName(name) {
+    console.log("This person name is: ", name);
+  }
+
+  </script>
+</head>
+<body>
+  <h1>Simple JS</h1>
+</body>
+</html>
